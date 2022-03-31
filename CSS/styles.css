@@ -1,0 +1,33 @@
+html {
+
+background-color: rgb(250, 229, 171);
+
+
+}
+.title{
+
+color: rgb(0, 0, 0);
+
+}
+
+.links {
+    background: fixed;
+    border: groove;
+    border-color: rgba(136, 100, 0, 0.658);
+    background-color: rgb(226, 162, 43);
+    color: black;
+}
+
+
+
+
+
+.button {
+    
+    border: groove;
+    padding: 5px;
+    background-color: rgb(226, 162, 43);
+    border-color: rgb(136, 100, 0, 0.658);
+}
+
+
