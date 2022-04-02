@@ -1,37 +1,192 @@
-html {
+* {
 
-background-color: rgb(250, 229, 171);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.menu-bar {
+    background-color: #E1EFF6;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 3px;
+    position: static;
+    
+}
+.menu-bar ul {
+
+    display: inline-flex;
+    list-style: none;
+    color: black;
+
+}
+
+.menu-bar ul li {
+width: 120px;
+margin: 15px;
+padding: 15px;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    color: black;
+    }
+    
+
+.body-1 {
+    
+    font-family: sans-serif;
+    background-position: center;
+    background-size: cover;
+    background-position-y: top 10px;
+    background-color: azure;
+    background-image: url(https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80)
+}
+.body-2 {
+
+    font-family: sans-serif;
+    background-position: center;
+    background-size: cover;
+    background-position-y: top 900px;
+    background-color: azure;
+    background-image: url(https://images.unsplash.com/photo-1574192324001-ee41e18ed679?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+
+.body-3 {
+
+    font-family: sans-serif;
+    background-position: center;
+    background-size: cover;
+    background-position-y: top 900px;
+    background-color: azure;
+    background-image: url(https://images.unsplash.com/photo-1574192324001-ee41e18ed679?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
 
 
 }
+
+
+
+.active, .menu-bar ul li:hover {
+    background-color: #83BCFF;
+    border-radius: 3px;
+ 
+}
+.menu-bar .fa-solid {
+
+    margin-right: 8px;
+}
+
+.sub-menu-1 {
+
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: #97D2FB;
+    margin-top: 15px;
+    margin-left: -15px;
+ 
+}
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted rgb(0, 0, 0);
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover { 
+
+    color: white;
+}
+
+.download {
+ 
+    margin: 3px;
+    padding: 2px;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    background-color: #82bcff55;
+    position: absolute;
+    right: 800px;
+    top: 400px;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 6px;
+    border-style: solid;
+
+}
+.download .fa-solid  {
+    margin-right: 8px;
+
+}
+.download:hover {
+ 
+    margin: 3px;
+    padding: 2px;
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ECCBD9;
+    position: absolute;
+    right: 800px;
+    top: 400px;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 6px;
+    border-style: solid;
+
+}
+
+.background {
+    position: absolute;
+    padding: 300px;
+    padding-top: 400px;
+    border-radius: 10px;
+    background-color: #83BCFF;
+    left: 700px;
+    top: 170px;
+}
+
 .title{
-color: rgb(0, 0, 0);
+
+font-size: xx-large;
 position: absolute;
-right: 360px;
-top: 85px;
+top: 15px;
+left: 15px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-
-
 
 .links {
-    background: fixed;
-    border: groove;
-    border-color: #644a02a8;
-    background-color: #e2a22b ;
-    color: black;
+margin: 15px;
+background-color: #97D2FB;
+border: #83BCFF;
+border-radius: 10px;
+position: absolute;
+
+
 }
 
-.button {    
-    border: groove;
-    padding: 5px;
-    background-color: #e2a22b;
-    border-color: #644a02a8;
-}
+.links p {
 
-.logo {
+   font-size: larger;
+    
+    }
 
- width: 100 ;
- position: absolute;
- position: static;
+.links a h1{
+font-size: xx-large
+    
 }
