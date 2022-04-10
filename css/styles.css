@@ -1,0 +1,194 @@
+@font-face {
+    font-family: Micro;
+    src: url(/assets/fonts/microsoft-logo.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
+body {
+    height: 5000px;
+}
+.container {
+    color: #cecece;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1600px;
+    padding-left: 128px;
+    padding-right: 128px;
+}
+
+@media (max-width: 1080px) {
+ .container {
+
+
+ }
+} 
+
+ @media (max-width: 810px) {
+    .container {
+        padding-left: 405px;
+        padding-right: 405px;
+    }
+}
+
+
+
+
+.button {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    background-color: #c0bdbd;
+    transition: all ease-in 200ms;
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-style: solid;
+}
+
+.button:hover{
+    color: #c0bdbd;
+    background-color: rgb(0, 0, 0);
+
+}
+.img{
+    max-width: 100%;
+}
+
+header {
+     z-index: 99;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background-image: linear-gradient(to top right, rgb(82, 82, 82) , rgb(66, 66, 66));
+}
+header .container{
+     
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+}
+
+
+.container h2{
+    color: inherit;
+     font-size: 32px;
+     text-transform: uppercase;
+     font-weight: 900;
+}
+
+.container h2 span{
+    font-weight: 600;
+}
+
+.container nav{
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(4, auto);
+}
+
+nav a{
+    transition: all 400ms;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav a:hover{
+    color: inherit;
+    font-size: 20px;
+    text-decoration: none;
+    color: #c7c7c7;
+}
+nav .active {
+
+    color: #c0bdbd;
+
+}
+main .banner {
+    color: #f0f8ff;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    background-position: center left;
+    background-size: cover;
+
+
+}
+
+main .banner:after {
+ 
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: rgb(51, 50, 50);
+    opacity: 0.6;
+
+}
+
+main .container{
+   position: relative;
+   z-index: 1;
+}
+
+main .container h1 {
+    font-size: 72px;
+    margin-bottom: 32px;
+ }
+
+ main .container h1 span {
+    color: pink;
+ }
+ 
+ main .features .container h2 {
+    color: pink;
+ }
+
+ main .features .container h3 {
+     color: rgb(218, 211, 211);
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 32px;
+ }
+ main .features {
+
+ background-image: linear-gradient(to right, rgb(82, 82, 82) , rgb(66, 66, 66));
+ }
+ main .features .container{
+     padding-top: 64px;
+     padding-bottom: 64px;
+
+     
+}
+main .features .container h2{
+    text-align: center;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    font-size: 36px;
+color: rgb(250, 204, 211);
+    
+}
+
+
+main .features .container .list{
+
+    
+}
+
